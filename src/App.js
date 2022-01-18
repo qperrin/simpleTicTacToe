@@ -1,3 +1,5 @@
+import { Layout } from "./tests/components/ui/Layout";
+
 export function App() {
-  return <div>Hello world</div>;
+  return <Layout>Hello world</Layout>;
 }
