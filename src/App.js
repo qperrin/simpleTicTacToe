@@ -1,5 +1,5 @@
-import { Layout } from "./tests/components/ui/Layout";
-import { GameMode } from "./tests/components/GameMode";
+import { Layout } from "./components/ui/Layout";
+import { GameMode } from "./components/GameMode";
 
 export function App() {
   return (
