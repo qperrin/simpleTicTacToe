@@ -1,11 +1,12 @@
 import Styled from "styled-components";
 import { useState } from "react";
+import { Game } from "./Game";
 
 export function GameMode() {
   const [gameMode, setGameMode] = useState(null);
   const handleGameModeChange = (e) => {
     e.preventDefault();
-    setGameMode({ ...gameMode, mode: "local" });
+    setGameMode({ mode: "local" });
   };
 
   return (
@@ -19,13 +20,13 @@ export function GameMode() {
           </ButtonWrapper>
         </>
       )}
-
+      {gameMode !== null && gameMode.mode && <Game />}
     </Wrapper>
   );
 }
 
 const Wrapper = Styled.div`
-    width: 100%;
+   
     text-align: center;
 `;
 
