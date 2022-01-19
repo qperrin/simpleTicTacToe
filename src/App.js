@@ -1,5 +1,10 @@
 import { Layout } from "./tests/components/ui/Layout";
+import { GameMode } from "./tests/components/GameMode";
 
 export function App() {
-  return <Layout>Hello world</Layout>;
+  return (
+    <Layout>
+      <GameMode />
+    </Layout>
+  );
 }

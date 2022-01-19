@@ -24,12 +24,16 @@ export const GlobalStyle = createGlobalStyle`
     border-radius : 3px;
     transition: all .3s ease;
   }
-  button:hover {
-      border: 1px solid;
+  button:not([disabled]):hover {
+      border: 1px solid ${(props) => props.theme.mainColor};
       background-color : ${(props) => props.theme.mainColor};
       color : ${(props) => props.theme.bgColor};
       border-radius : 3px;
       cursor: pointer;
   }
     
+   button:is([disabled]) {
+   		color: #CCC;
+   		background-color: #EEE;
+   }
 `;
